@@ -1,0 +1,67 @@
+h1{
+    font-size: large;
+    color: red;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: inset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+body{
+    background-image: url(img/romantic-background-with-hearts-valentines-day-free-vector.jpg);
+    background-size: cover;
+}
+
+.contenedor {
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+
+.contador {
+  display: flex;           
+  justify-content: center; 
+  gap: 30px;               
+  flex-wrap: nowrap;       
+}
+
+
+.tiempo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  box-shadow: black;
+}
+.tiempo span {
+  display: flex;
+  font-size: 16px;
+  color: black;
+  box-shadow: black;
+}
+@media (max-width: 600px) {
+  .contador {
+    flex-direction: column; /* De fila a columna */
+    gap: 20px;
+  }
+
+  .tiempo {
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedor {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
